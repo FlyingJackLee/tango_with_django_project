@@ -8,7 +8,7 @@
             </strong>
         </li>
         {% else %}
-        <li></li><a href="{% url 'rango:show_category' c.slug %}">{{ c.name }}</a></li>
+        <li><a href="{% url 'rango:show_category' c.slug %}">{{ c.name }}</a></li>
         {% endif %}
     {% endfor %}
 
